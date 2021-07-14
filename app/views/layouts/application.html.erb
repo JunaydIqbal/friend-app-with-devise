@@ -22,6 +22,11 @@
       <% if notice%>
         <%= render 'layouts/alerts'%>
       <% end %>
+
+      <% if alert%>
+        <%= render 'layouts/danger'%>
+      <% end %>
+      
       <br>
       <%= yield %>
     </div>
