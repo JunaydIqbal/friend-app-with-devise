@@ -2,9 +2,10 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   
-
+  <%= flash[:alert]%>
   <div class="field">
-    <%= f.label :login %><br />
+
+    <%= f.label :label_msg  %><br />
     <%= f.text_field :login, autofocus: true, class: "input" %>
   </div>
 

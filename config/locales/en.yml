@@ -33,4 +33,5 @@ en:
   activerecord:
     attributes:
       user:
-        login: "Username or Email"
+        login: "Username"
+        label_msg: "Username or Email"

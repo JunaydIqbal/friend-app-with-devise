@@ -13,6 +13,12 @@ class User < ApplicationRecord
   def username_uniqueness
     self.errors.add(:base, 'User with same username already exists. Please try with another username.') if User.where(:username => self.username).exists?
   end
+
+  # validate :login_failed
+
+  # def login_failed
+  #   self.errors.add(:base, 'Invalid username and password') if !User.where(:username => self.username, :password => self.password).exists?
+  # end
   
   def self.find_for_database_authentication warden_condition
     conditions = warden_condition.dup
