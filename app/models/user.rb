@@ -8,6 +8,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
 
+  validate :username_uniqueness
+
+  def username_uniqueness
+    self.errors.add(:base, 'User with same username already exists. Please try with another username.') if User.where(:username => self.username).exists?
+  end
   
   def self.find_for_database_authentication warden_condition
     conditions = warden_condition.dup
