@@ -1,24 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Friend App with Devise
+- Devise (Sign in, Register and Forget Password) functionalities a app on Rails to create friends, modify and destroy.
+- The app is just for practice the Rails and explore devise gem on rails.
+- In this project, to learn how to authenticate the pages.
